@@ -1,7 +1,10 @@
 #include <iostream>
-#include <pqxx/pqxx>
+#include "userController.hpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    UserController uc;
+    uc.addUser(123456789,"mycoolemail@gmail.com");
+    uc.viewUsers();
+
     return 0;
 }
