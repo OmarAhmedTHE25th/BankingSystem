@@ -2,9 +2,8 @@
 #include "userController.hpp"
 
 int main() {
-    UserController uc;
-    uc.addUser(123456789,"mycoolemail@gmail.com");
-    uc.viewUsers();
-
+ UserController::updateUser(1,std::nullopt,"my.cool.email@gmail.com");
+    UserController::updateUser(45,2,"my_other.cool.email@yahoo.com");
+UserController::viewUsers();
     return 0;
 }
