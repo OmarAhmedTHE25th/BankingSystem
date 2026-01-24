@@ -15,7 +15,8 @@ public:
      void viewUsers() const;
      void removeUser(long long id) const;
      void updateUser(int old_id, std::optional<int> new_id = std::nullopt,
-                const std::optional<std::string>& new_email = std::nullopt) const;
+         const std::optional<std::string>& new_email = std::nullopt) const;
+
 
 };
 

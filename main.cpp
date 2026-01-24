@@ -27,8 +27,9 @@ int main() {
             " sslmode=require"
         );
         const UserController uc(Conn);
-        uc.updateUser(1,std::nullopt,"my.cool.email@gmail.com");
-        uc.updateUser(45,2,"my_other.cool.email@yahoo.com");
+        long long id = std::chrono::system_clock::now().time_since_epoch().count();
+        std::string email = "test_" + std::to_string(id) + "@example.com";
+        uc.addUser(id,email);
         uc.viewUsers();
 
     }

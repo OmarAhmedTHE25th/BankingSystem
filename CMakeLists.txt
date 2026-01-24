@@ -4,10 +4,10 @@ project(BankingSystem)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(BankingSystem main.cpp
-        managerController.cpp
-        managerController.hpp
         userController.cpp
-        userController.hpp)
+        userController.hpp
+        bankAccountController.cpp
+        bankAccountController.hpp)
 
 # vcpkg installed target
 find_package(libpqxx CONFIG REQUIRED)
